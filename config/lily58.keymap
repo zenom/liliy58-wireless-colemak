@@ -25,7 +25,7 @@ name: name##_macro {                  \
 		MACRO(vim_s,  &kp COLON &kp W &kp Q)
 		MACRO(dir_up, &kp DOT &kp DOT &kp FSLH)
 
-        new_macro: new_macro {
+        move_pane_left: move_pane_left {
             compatible = "zmk,behavior-macro";
             label = "new_macro";
             #binding-cells = <0>;
@@ -96,16 +96,6 @@ name: name##_macro {                  \
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        Layer__3 {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
