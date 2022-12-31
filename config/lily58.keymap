@@ -27,7 +27,7 @@ name: name##_macro {                  \
 
         move_pane_left: move_pane_left {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "move_pane_left";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -36,7 +36,7 @@ name: name##_macro {                  \
         };
         move_pain_right: move_pain_right {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "move_pane_right";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
