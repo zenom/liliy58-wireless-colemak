@@ -8,6 +8,28 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+/ {
+  macros {
+      ctrl_w_h: ctrl_w_h {
+        label = "CTRL-W-H";
+        compatible = "zmk,behavior-macro";
+        bindings
+          = <&macro_press &kp LCTRL &kp w>
+          , <&macro_tap &kp h>
+          , <&macro_release &kp LCTRU &kp w>
+          ;
+        };
+      ctrl_w_l: ctrl_w_l {
+        label = "CTRL-W-L";
+        compatible = "zmk,behavior-macro";
+        bindings
+          = <&macro_press &kp LCTRL &kp w>
+          , <&macro_tap &kp l>
+          , <&macro_release &kp LCTRU &kp w>
+          ;
+        };
+    };
+  };
 
 / {
 	keymap {
