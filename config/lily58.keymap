@@ -11,8 +11,9 @@
 / {
   macros {
       ctrl_w_h: ctrl_w_h {
-        label = "CTRL-W-H";
+        label = "move_pane_left";
         compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
         bindings
           = <&macro_press &kp LCTRL &kp w>
           , <&macro_tap &kp h>
@@ -20,8 +21,9 @@
           ;
         };
       ctrl_w_l: ctrl_w_l {
-        label = "CTRL-W-L";
+        label = "move_pane_right";
         compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
         bindings
           = <&macro_press &kp LCTRL &kp w>
           , <&macro_tap &kp l>
