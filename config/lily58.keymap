@@ -40,7 +40,8 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(W) &kp L>;
+                <&kp LC(W) &kp L>,
+                <&macro_release>;
         };
     };
 };
