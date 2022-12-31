@@ -30,7 +30,7 @@ name: name##_macro {                  \
             label = "new_macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_press>,
                 <&kp LC(W) &kp H>,
                 <&macro_release>;
         };
