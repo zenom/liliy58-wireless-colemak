@@ -34,6 +34,14 @@ name: name##_macro {                  \
                 <&kp LC(W) &kp H>,
                 <&macro_release>;
         };
+        move_pain_right: move_pain_right {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(W) &kp L>;
+        };
     };
 };
 
