@@ -9,6 +9,24 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define MACRO(name, keys)             \
+name: name##_macro {                  \
+	label = #name;                    \
+	compatible = "zmk,behavior-macro";\
+	#binding-cells = <0>;             \
+	tap-ms = <1>;                     \
+	wait-ms = <1>;                    \
+	bindings = <keys>;                \
+};
+
+/ {
+	macros {
+		MACRO(vim_q,  &kp COLON &kp Q &kp EXCL)
+		MACRO(vim_s,  &kp COLON &kp W &kp Q)
+		MACRO(dir_up, &kp DOT &kp DOT &kp FSLH)
+	};
+};
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
