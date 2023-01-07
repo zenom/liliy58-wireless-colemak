@@ -77,11 +77,11 @@ name: name##_macro {                  \
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
- &kp ESCAPE  &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                    &kp N6  &kp N7     &kp N8   &kp N9    &kp N0  &kp GRAVE
-    &kp TAB   &kp Q   &kp W     &kp F     &kp P   &kp B                                     &kp J   &kp L      &kp U    &kp Y  &kp SEMI  &kp MINUS
-  &kp LCTRL   &kp A   &kp R     &kp S     &kp T   &kp G                                     &kp M   &kp N      &kp E    &kp I     &kp O    &kp SQT
-  &kp LSHFT   &kp Z   &kp X     &kp C     &kp D   &kp V  &kp K_MUTE  &kp LA(SPACE)          &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH   &kp PLUS
-                             &kp LALT  &kp LGUI   &mo 1   &kp SPACE        &kp RET  &kp BACKSPACE   &mo 2   &kp RGUI
+ &kp ESCAPE  &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                    &kp N6  &kp N7         &kp N8   &kp N9    &kp N0  &kp GRAVE
+    &kp TAB   &kp Q   &kp W     &kp F     &kp P   &kp B                                     &kp J   &kp L          &kp U    &kp Y  &kp SEMI  &kp MINUS
+  &kp LCTRL   &kp A   &kp R     &kp S     &kp T   &kp G                                     &kp M   &kp N          &kp E    &kp I     &kp O    &kp SQT
+  &kp LSHFT   &kp Z   &kp X     &kp C     &kp D   &kp V  &kp K_MUTE  &kp LA(SPACE)          &kp K   &kp H      &kp COMMA  &kp DOT  &kp FSLH   &kp PLUS
+                             &kp LALT  &kp LGUI   &mo 1   &kp SPACE        &kp RET  &kp BACKSPACE   &mo 2  &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -96,11 +96,11 @@ name: name##_macro {                  \
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
- &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                  &move_pane_left          &trans        &trans  &move_pain_right  &trans  &trans
-     &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
-     &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                           &trans          &trans        &trans            &trans  &trans  &trans
-     &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &trans           &trans          &trans        &trans            &trans  &trans  &trans
-                                                                           &trans                   &trans        &trans  &trans  &trans           &trans          &trans        &trans
+ &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                  &move_pane_left  &move_pane_down  &move_pane_up  &move_pain_right  &trans  &trans
+     &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
+     &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                           &trans           &trans         &trans            &trans  &trans  &trans
+     &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &trans           &trans           &trans         &trans            &trans  &trans  &trans
+                                                                           &trans                   &trans        &trans  &trans  &trans           &trans           &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
