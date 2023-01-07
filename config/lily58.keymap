@@ -31,9 +31,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W>,
+                <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp H>,
+                <&kp W &kp H>,
                 <&macro_release>;
         };
         move_pain_right: move_pain_right {
@@ -42,9 +42,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W>,
+                <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp L>,
+                <&kp W &kp L>,
                 <&macro_release>;
         };
         move_pane_up: move_pane_up {
@@ -53,9 +53,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W>,
+                <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp K>,
+                <&kp W &kp K>,
                 <&macro_release>;
         };
         move_pane_down: move_pane_down {
@@ -64,9 +64,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W>,
+                <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp J>,
+                <&kp W &kp J>,
                 <&macro_release>;
         };
         write_file: write_file {
@@ -110,11 +110,11 @@ name: name##_macro {                  \
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
- &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                           &trans           &trans         &trans            &trans  &trans  &trans
-     &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                  &move_pane_left  &move_pane_down  &move_pane_up  &move_pain_right  &trans  &trans
-     &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                         &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT  &trans  &trans
-     &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &trans           &trans           &trans         &trans            &trans  &trans  &trans
-                                                                           &trans                   &trans        &trans  &trans  &trans           &trans           &trans         &trans
+ &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                                &trans           &trans         &trans            &trans  &trans  &trans
+     &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                       &move_pane_left  &move_pane_down  &move_pane_up  &move_pain_right  &trans  &trans
+     &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                              &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT  &trans  &trans
+     &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &write_file           &trans           &trans         &trans            &trans  &trans  &trans
+                                                                           &trans                   &trans        &trans  &trans       &trans           &trans           &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
