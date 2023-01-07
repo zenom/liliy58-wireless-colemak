@@ -31,7 +31,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W &kp H>,
+                <&kp LCTRL &kp W>,
+                <&macro_tap>,
+                <&kp H>,
                 <&macro_release>;
         };
         move_pain_right: move_pain_right {
@@ -40,7 +42,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W &kp L>,
+                <&kp LCTRL &kp W>,
+                <&macro_tap>,
+                <&kp L>,
                 <&macro_release>;
         };
         move_pane_up: move_pane_up {
@@ -49,7 +53,9 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W &kp K>,
+                <&kp LCTRL &kp W>,
+                <&macro_tap>,
+                <&kp K>,
                 <&macro_release>;
         };
         move_pane_down: move_pane_down {
@@ -58,8 +64,16 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp W &kp J>,
+                <&kp LCTRL &kp W>,
+                <&macro_tap>,
+                <&kp J>,
                 <&macro_release>;
+        };
+        write_file: write_file {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp W &kp EXCL &kp ENTER>;
         };
     };
 };
@@ -80,7 +94,7 @@ name: name##_macro {                  \
  &kp ESCAPE  &kp N1  &kp N2    &kp N3    &kp N4  &kp N5                                    &kp N6  &kp N7         &kp N8   &kp N9    &kp N0  &kp GRAVE
     &kp TAB   &kp Q   &kp W     &kp F     &kp P   &kp B                                     &kp J   &kp L          &kp U    &kp Y  &kp SEMI  &kp MINUS
   &kp LCTRL   &kp A   &kp R     &kp S     &kp T   &kp G                                     &kp M   &kp N          &kp E    &kp I     &kp O    &kp SQT
-  &kp LSHFT   &kp Z   &kp X     &kp C     &kp D   &kp V  &kp K_MUTE  &kp LA(SPACE)          &kp K   &kp H      &kp COMMA  &kp DOT  &kp FSLH   &kp PLUS
+  &kp LSHFT   &kp Z   &kp X     &kp C     &kp D   &kp V  &kp K_MUTE  &kp LA(SPACE)          &kp K   &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
                              &kp LALT  &kp LGUI   &mo 1   &kp SPACE        &kp RET  &kp BACKSPACE   &mo 2  &kp BACKSLASH
             >;
 
