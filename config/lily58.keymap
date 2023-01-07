@@ -31,7 +31,7 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(W) &kp H>,
+                <&kp LCTRL &kp W &kp H>,
                 <&macro_release>;
         };
         move_pain_right: move_pain_right {
@@ -40,7 +40,7 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(W) &kp L>,
+                <&kp LCTRL &kp W &kp L>,
                 <&macro_release>;
         };
         move_pane_up: move_pane_up {
@@ -49,7 +49,7 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(W) &kp K>,
+                <&kp LCTRL &kp W &kp K>,
                 <&macro_release>;
         };
         move_pane_down: move_pane_down {
@@ -58,7 +58,7 @@ name: name##_macro {                  \
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(W) &kp J>,
+                <&kp LCTRL &kp W &kp J>,
                 <&macro_release>;
         };
     };
