@@ -34,7 +34,8 @@ name: name##_macro {                  \
                 <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp W &kp H>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL>;
         };
         move_pain_right: move_pain_right {
             compatible = "zmk,behavior-macro";
@@ -45,7 +46,8 @@ name: name##_macro {                  \
                 <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp W &kp L>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL>;
         };
         move_pane_up: move_pane_up {
             compatible = "zmk,behavior-macro";
@@ -56,7 +58,8 @@ name: name##_macro {                  \
                 <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp W &kp K>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL>;
         };
         move_pane_down: move_pane_down {
             compatible = "zmk,behavior-macro";
@@ -67,7 +70,8 @@ name: name##_macro {                  \
                 <&kp LCTRL>,
                 <&macro_tap>,
                 <&kp W &kp J>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCTRL>;
         };
         write_file: write_file {
             compatible = "zmk,behavior-macro";
