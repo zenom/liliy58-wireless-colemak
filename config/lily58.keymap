@@ -120,11 +120,11 @@ name: name##_macro {                  \
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
- &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                           &trans           &trans         &trans            &trans  &trans    &trans
-     &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                  &move_pane_left  &move_pane_down  &move_pane_up  &move_pain_right  &trans    &trans
-     &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                         &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT  &trans  &kp PIPE
-     &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &trans      &write_file       &quit_file         &trans            &trans  &trans    &trans
-                                                                           &trans                   &trans        &trans  &trans  &trans           &trans  &kp LS(LC(TAB))    &kp LC(TAB)
+      &bt BT_CLR            &bt BT_SEL 0            &bt BT_SEL 1          &bt BT_SEL 2             &bt BT_SEL 3  &bt BT_SEL 4                           &trans           &trans         &trans            &trans  &trans       &trans
+ &kp LC(LS(TAB))  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(DOWN_ARROW))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT_ARROW))        &trans                  &move_pane_left  &move_pane_down  &move_pane_up  &move_pain_right  &trans  &kp RC(TAB)
+          &trans          &kp LEFT_BRACE         &kp RIGHT_BRACE      &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &trans                         &kp LEFT         &kp DOWN         &kp UP         &kp RIGHT  &trans     &kp PIPE
+          &trans        &ext_power EP_ON       &ext_power EP_OFF     &ext_power EP_TOG                   &trans        &trans  &trans  &trans      &write_file       &quit_file         &trans            &trans  &trans       &trans
+                                                                                &trans                   &trans        &trans  &trans  &trans           &trans           &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
